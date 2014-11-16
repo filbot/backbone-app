@@ -1,0 +1,36 @@
+<div class="modal modal_isOpen">
+    <div class="modal-container modal-container_smAtXsm">
+        <div class="modal-container-content">
+            {{> templates/modules/_ReturnToMainStage}}
+
+            <!-- Game - Board & Game Play - start -->
+            <div class="modal-bd">
+                <div class="grid">
+                    {{> templates/modules/_Scoreboard levelData}}
+
+                    <div class="grid-col grid-col_2of3">
+                        <div class="game game_secondary">
+                            <div class="game-container">
+                                <div class="gameLevel gameLevel_board{{levelData.level}}">
+                                    <ul class="blocks blocks_5up js-board">
+
+                                    </ul><!-- Blocks - end -->
+                                </div><!-- Game Level - end -->
+                            </div><!-- Game Container - end -->
+
+                            <div class="game-gradient"></div>
+                        </div><!-- Game - end -->
+                    </div><!-- Grid Column - end -->
+                </div><!-- Grid - end -->
+            </div><!-- Modal Body - end -->
+            <!-- Game - Board & Game Play - end -->
+
+        </div><!-- Modal Container Content - end -->
+
+        <div class="js-howToPlayContainer">
+            {{> templates/modules/_HowToPlayModal levelData.howToPlay}}
+        </div>
+
+        <div class="modal-container-gradient"></div>
+    </div><!-- Modal Container - end -->
+</div><!-- Modal - end -->

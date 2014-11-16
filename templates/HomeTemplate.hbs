@@ -1,0 +1,84 @@
+<div class="modal modal_isOpen">
+    <div class="modal-container">
+        <div class="modal-container-content">
+            {{> templates/modules/_ReturnToMainStage}}
+
+            <div class="modal-bd modal-bd_pSidesLg">
+                <div class="grid">
+                    <div class="grid-col grid-col_1of3">
+                        <div class="hook">
+                            <div class="hook-md hook-md_pTopHuge">
+                                <div class="logo">
+                                    <h2 class="logo-plumrPairs">{{title}}</h2>
+                                </div>
+                            </div>
+
+                            <div class="hook-bd">
+                                <a href="#/level/1" class="btn btn_xlg js-playTheGame js-href">
+                                    <span class="btn-hd">{{playText}}</span>
+                                </a>
+                            </div>
+
+                           <!--- TODO -->
+                            <div class="hook-ft">
+                                {{> templates/modules/_SocialMediaPartial share}}
+                            </div>
+                        </div><!-- Logo - end -->
+                    </div><!-- Grid Column - end -->
+                    <div class="grid-col grid-col_2of3 grid-col_sLeftLg">
+                        {{#if isStageOne}} <!-- contains contest info in stage 1 -->
+                        <div class="box box_pTopXlg mix-box_tCenterAtXsm">
+                            <div class="box-hd">
+                                <h3 class="hdg hdg_h1 mix-hdg_tCaps mix-hdg_tShadow">{{promotion.title}}</h3>
+                            </div>
+
+                            <div class="box-bd box-bd_pTopXtiny">
+                                <p class="txt txt_p1">{{{promotion.body}}}</p>
+                            </div>
+                        </div><!-- Box - end -->
+
+                        <div class="box box_sBottomFlush mix-box_secondary mix-box_tCenterAtXsm js-howToPlayBtn">
+                            <div class="box-hd">
+                                <h3 class="hdg hdg_h3Alt mix-hdg_tCaps mix-hdg_tShadow">{{howToPlay.title}}</h3>
+                            </div>
+
+                            <div class="box-bd box-md_pTopFlushAtMed">
+                                <p class="txt txt_p1">
+                                    {{howToPlay.body}}
+                                </p>
+                            </div>
+
+                            <div class="box-md">
+                                <div class="example">
+                                    <div class="example-gameLevel1 example-gameLevel1_sm"></div>
+                                </div>
+                            </div>
+                        </div><!-- Box - end -->
+                        {{else}} <!-- REMOVES contest info AFTER stage 1 -->
+                            <div class="box box_sBottomFlush box_pTopXlg mix-box_tCenterAtXsm js-howToPlayBtn">
+                                <div class="box-hd">
+                                    <h3 class="hdg hdg_h3Alt mix-hdg_tCaps mix-hdg_tShadow">{{howToPlay.title}}</h3>
+                                </div>
+
+                                <div class="box-bd box-md_pTopFlushAtMed">
+                                    <p class="txt txt_p1">
+                                        {{howToPlay.body}}
+                                    </p>
+                                </div>
+
+                                <div class="box-md">
+                                    <div class="example">
+                                        <div class="example-gameLevel1 example-gameLevel1_sm"></div>
+                                    </div>
+                                </div>
+                            </div><!-- Box - end -->
+                        {{/if}}
+                    </div><!-- Grid Column - end -->
+                </div><!-- Grid - end -->
+            </div><!-- Modal Body - end -->
+        </div><!-- Modal Container Content - end -->
+
+        <div class="modal-container-questions"></div>
+        <div class="modal-container-gradient"></div>
+    </div><!-- Modal Container - end -->
+</div><!-- Modal - end -->

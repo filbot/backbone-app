@@ -1,0 +1,91 @@
+<div class="modal modal_isOpen">
+    <div class="modal-container modal-container_secondary">
+        <div class="modal-container-content">
+            {{> templates/modules/_ReturnToMainStage}}
+
+            <div class="modal-bd modal-bd_pSidesSm">
+                <div class="grid">
+                    <div class="grid-col grid-col_1of3">
+                        <!-- TODO integrate their previous win/loss for a switch statement -->
+                        {{#if isStageOne}}
+                        <div class="box box_pTopHuge mix-box_blank mix-box_tCenterAtXsm">
+                            <div class="box-hd">
+                                <h2 class="isVisuallyHidden">Plumr Pairs</h2>
+                                <h3 class="hdg hdg_h2 mix-hdg_tCaps">{{title}}</h3>
+                            </div>
+                            <div class="box-bd box-bd_pTopXtiny box-bd_sSidesMedAtXsm">
+                                <p class="txt txt_p1">
+                                    {{body}} <a href="https://www.liquidplumr.com/wp-content/uploads/2014/10/Liquid_Plumr_Plumr_Pairs_Instant_Win_Game_Official_Rules_Oct14.pdf" target="_blank" class="txt-link">Official Rules</a>.
+                                </p>
+                            </div>
+                        </div><!-- Section - end -->
+
+                        <!-- SWITCH box_pTopLg to hook-bd_pTopLGAtXsm if box above ^ is not present -->
+                        <div class="hook mix-hook_aBottomLg">
+                            <div class="hook-bd hook-bd_pTopSmAtXsm">
+                                {{> templates/modules/_SocialMediaPartial share}}
+                            </div>
+                        </div>
+
+                        {{/if}}
+
+                        <!-- SWITCH box_pTopLg to box_pTopXtallAtMed if box two above (win box) ^ is not present -->
+                        <!-- This is specific to a design layout -->
+                        <div class="box {{#if isStageOne}}box_pTopLg{{else}}box_pTopXtallAtMedsvn {{/if}} mix-box_info">
+                            <div class="box-hd">
+                                <div class="logo logo_overlapSm">
+                                    <h3 class="logo-liquidLuck">Liquid Luck</h3>
+                                </div>
+                            </div>
+                            <div class="box-bd box-bd_pTopFlush box-bd_sSidesSm">
+                                <p class="txt txt_p1 mix-txt_tCenter mix-txt_lSm">
+                                    Spin the Bottle to earn entries to the Grand Prize Finale Sweepstakes
+                                    for a chance to <strong>win $10,000 + free Liquid-Plumr&reg; product!</strong>
+                                </p>
+                            </div>
+                        </div><!-- Box - end -->
+                    </div><!-- Grid Column - end -->
+
+                    <div class="grid-col grid-col_2of3">
+                        <div class="game mix-game_blank">
+                            <div class="game-container">
+                                <div class="gameWheel">
+                                    <div class="gameWheel-hd">
+                                        <div class="gameWheel-instructions">
+                                            <div class="gameWheel-instructions-hd">
+                                                <div class="gameWheel-instructions-hd-click">
+                                                    <h4 class="hdg hdg_h5 mix-hdg_tCenter mix-hdg_tCaps">Click and drag to spin the bottle!</h4>
+                                                </div>
+                                                <div class="gameWheel-instructions-hd-touch">
+                                                    <h4 class="hdg hdg_h5 mix-hdg_tCenter mix-hdg_tCaps">Swipe to spin the bottle!</h4>
+                                                </div>
+                                            </div>
+
+                                            <div class="gameWheel-instructions-md">
+                                                <span class="icn icn_hand"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="gameWheel-bd">
+                                        <div class="gameWheel-circle">
+                                            <div class="gameWheel-circle-spun js-wheelContainer"></div>
+                                            <div class="gameWheel-circle-middle"></div>
+                                            <div class="gameWheel-circle-marker js-gameWheel"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- Grid Column - end -->
+                </div><!-- Grid - end -->
+            </div><!-- Modal Body - end -->
+        </div><!-- Modal Container Content - end -->
+
+        <div class="js-spinnerResultsContainer">
+            {{> templates/modules/_SpinnerResultsModal confirmation}}
+        </div>
+
+        <div class="modal-container-gradient"></div>
+    </div><!-- Modal Container - end -->
+</div><!-- Modal - end -->

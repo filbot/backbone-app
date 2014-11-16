@@ -1,0 +1,66 @@
+<div class="wrapper mix-wrapper_collapse">
+    <div class="grid">
+        <div class="grid-row">
+            <div class="grid-row-col grid-row-col_1of2">
+                <div class="hero js-modalController">
+                    <div class="hero-hd">
+                        <div class="wrapper">
+                            <h3 class="hdg hdg_8">{{{title}}}</h3>
+                        </div>
+                    </div>
+                    <div class="hero-bd">
+                        <div class="wrapper">
+                            <p class="txt txt_collapse txt_6">{{{body}}}</p>
+                        </div>
+                    </div>
+                    <div class="hero-ft">
+                        <div class="wrapper">
+                            <div class="tableRow tableRow_std mix-tableRow_top">
+                                <div class="cta">
+                                    <div class="cta-hd">
+                                        <ul class="hList hList_tight">
+                                            <li>
+                                                <a href="#/play-again/" class="btn btn_cta btn_cta_light">
+                                                    <span class="btn btn_cta btn_cta_lightInner mix-btn_large">
+                                                        <span class="utlty-txtDither">Play Again</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="cta-bd utlty-isHidden_md">
+                                        <div class="share">
+                                            <div class="share-hd">
+                                                <h4 class="hdg hdg_5">Challenge Your Friends</h4>
+                                            </div>
+                                            <div class="share-bd">
+                                                {{> templates/modules/_SocialMediaPartial share}}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="share utlty-isHidden_small">
+                                    <div class="share-hd">
+                                        <h4 class="hdg hdg_5">Challenge Your Friends</h4>
+                                    </div>
+                                    <div class="share-bd">
+                                        {{> templates/modules/_SocialMediaPartial share}}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box mix-box_sheer mix-box_thick utlty-isHidden_small">
+                                <div class="tableRow tableRow_std mix-tableRow_middle mix-tableRow_shaded">
+                                    <span class="icon icon_utility icon_utility_phoneDial"></span>
+                                    <p class="txt txt_3">Allstate&reg; makes it easy to create and manage an inventory of your personal property with the Allstate&reg; Digital Locker&reg; mobile app. Learn more and <a href="http://www.allstate.com/mobile/digital-locker.aspx" target="_blank" class="js-analytics">download the mobile app</a> to help protect your valuables should you ever need to make a claim!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-row-col grid-row-col_2of2">
+                {{> templates/modules/_Scoreboard levelData}}
+            </div>
+        </div>
+    </div>
+</div>

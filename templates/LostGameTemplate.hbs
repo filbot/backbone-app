@@ -1,0 +1,68 @@
+<div class="modal modal_isOpen">
+    <div class="modal-container modal-container_lgAtXsm">
+        <div class="modal-container-content">
+          {{> templates/modules/_ReturnToMainStage}}
+            <div class="modal-bd modal-bd_pSidesMed">
+                <div class="grid">
+                    <div class="grid-col grid-col_1of3Alt {{#if isStageThree}}grid-col_pLeftLg{{/if}}">
+                        <div class="hook">
+                            <div class="hook-bd hook-bd_tLeftAtXsm">
+                                <div class="box box_pRightMed box_pTopHuge box_sSidesSm mix-box_secondary">
+                                    <div class="box-hd box-hd_pLeftXlgAtXsm">
+                                        <h2 class="isVisuallyHidden">Plumr Pairs</h2>
+                                        <h3 class="hdg hdg_h3 mix-hdg_tCaps mix-hdg_tShadow">{{title}}</h3>
+                                    </div>
+
+                                    <div class="box-meta box-meta_pLeftXlgAtXsm">
+                                        <p class="txt txt_p2">{{subtitle}}</p>
+                                    </div>
+
+                                    <div class="box-md mix-box-md_aLeftMedAtXsm">
+                                        <div class="logo">
+                                            <div class="logo-plumrPairs logo-plumrPairs_xsm"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="box-ft box-ft_pLeftXlgAtXsm">
+                                        <a href="#" class="btn btn_sm mix-btn_secondary js-playAgainBtn">
+                                            <span class="btn-hd">Play Again</span>
+                                        </a>
+                                    </div>
+                                </div><!-- Box - end -->
+                            </div><!-- Hook Body - end -->
+
+                            <div class="hook-ft">
+                                <ul class="share share_pRightMed">
+                                    <li class="share-item mix-share-item_textSm">
+                                        Challenge your friends
+                                    </li>
+                                    <li class="share-item">
+                                        <a href="#" class="share-item-link">
+                                            <span class="icn icn_facebook js-shareFacebook"
+                                                  data-js-name="{{share.facebook.title}}"
+                                                  data-js-description="{{share.facebook.body}}">Facebook</span>
+                                        </a>
+                                    </li>
+                                    <li class="share-item">
+                                        <a href="#" class="share-item-link">
+                                            <span class="icn icn_twitter js-shareTwitter"
+                                                  data-js-name="{{share.facebook.title}}"
+                                                  data-js-description="{{share.twitter.body}}">Twitter</span>
+                                        </a>
+                                    </li>
+                                </ul><!-- Share - end -->
+                            </div><!-- Hook Footer - end -->
+                        </div><!-- Hook - end -->
+                    </div><!-- Grid Column - end -->
+                    {{#if isStageThree}}
+                    {{else}}
+                        {{> templates/modules/_SignUpForm}}
+                    {{/if}}
+                </div><!-- Grid - end -->
+            </div><!-- Modal Body - end -->
+        </div><!-- Modal Container Content - end -->
+
+        <div class="modal-container-questions modal-container-questions_lgAtXsm"></div>
+        <div class="modal-container-gradient"></div>
+    </div><!-- Modal Container - end -->
+</div><!-- Modal - end -->

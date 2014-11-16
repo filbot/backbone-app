@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html class="no-js" data-useragent="<?php echo $_SERVER['HTTP_USER_AGENT']; ?>" lang="en-us">
+<head>
+    <!-- SEO -->
+    <title>Liquid-Plumr® presents Plumr Pairs</title>
+    <meta name="description" content="Get ready for glory, gamers! Play games, share your progress and challenge your friends." />
+
+    <!-- META DATA -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimal-ui" />
+
+    <meta property="og:title" content="Liquid-Plumr® presents Plumr Pairs" />
+    <meta property="og:description" content="Match all Plumr Pairs before time runs out." />
+    <meta property="og:image" content="assets/media/images/)" />
+    <meta property="og:site_name" content="Liquid-Plumr® presents Play with Plumrs" />
+    <meta property="og:type" content="website" />
+
+    <!--[if IE]>
+    <meta http-equiv="cleartype" content="on" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1" />
+    <![endif]-->
+
+    <!-- ICONS -->
+    <link type="image/x-icon" href="<?php echo $gameAssetsUrl; ?>/media/images/favicon.ico" rel="shortcut icon" />
+
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" media="screen, projection" href="<?php echo $gameAssetsUrl; ?>/styles/modern.css" />
+    <link rel="stylesheet" media="screen, projection" href="<?php echo $gameAssetsUrl; ?>/styles/legacy.css" />
+    <link rel="stylesheet" media="screen, projection" href="<?php echo $hubAssetsUrl; ?>/styles/modern.css" />
+    {{#block "styles"}}
+
+    {{/block}}
+
+    <!-- Satellite -->
+    <script src="<?=SATELLITE_JS_URL?>"></script>
+    <!-- /Satellite -->
+
+</head>
+<body>
+<div class="site">
+    <div class="site-container">
+        <!-- Site Header - start -->
+        <div class="site-hd">
+            <div class="container">
+                <div class="header">
+                    <div class="header-primary" role="banner">
+                        <h1 class="header-logo">
+                            <a href="#" class="header-logo-link">Liquid-Plumr&reg; presents Play with Plumrs</a>
+                        </h1>
+                    </div><!-- Header Primary - end -->
+
+                    <div class="header-secondary">
+                        <div class="headerCTA">
+                            <div class="headerCTA-hd">
+                                <div class="hdg hdg_h6 hdg_fNormal hdg_fSecondary hdg_lhMedAtXsm">
+                                    Get ready for glory, gamers! Play to enter for a chance to
+                                    <strong class="mix-hdg_cLink mix-hdg_tCaps">WIN Cash & PRIZES.</strong>
+                                </div>
+                            </div>
+                            <div class="headerCTA-ft">
+                                <ul class="share">
+                                    <li class="share-item">
+                                        <a href="#" class="share-item-link">
+                                            <span class="icn icn_facebook js-shareFacebook"
+                                                  data-js-name="{{share.facebook.title}}"
+                                                  data-js-description="{{share.facebook.body}}">Facebook</span>
+                                        </a>
+                                    </li>
+                                    <li class="share-item">
+                                        <a href="#" class="share-item-link">
+                                            <span class="icn icn_twitter js-shareTwitter"
+                                                  data-js-name="{{share.facebook.title}}"
+                                                  data-js-description="{{share.twitter.body}}">Twitter</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!-- Header Secondary - end -->
+                </div><!-- Header - end -->
+            </div>
+        </div>
+        <!-- Site Header - end -->
+
+
+        <!-- Site Body - start -->
+        <div class="site-bd site-bd_xsm" id="main" role="main">
+            <div class="container">
+
+                <!-- Game - start -->
+                <div class="js-containerArea">
+
+                    {{#block "page-bd"}}
+                    {{/block}}
+
+                </div>
+                <!-- Game - end -->
+
+            </div>
+        </div>
+        <!-- Site Body - end -->
+    </div>
+
+
+    <!-- Site Footer - start -->
+    <div class="site-ft">
+        <div class="footer">
+            <div class="footerAudience"></div>
+
+            <h2 class="isVisuallyHidden">Footer Information and Navigation</h2>
+
+            <div class="footer-primary" role="contentinfo">
+                <div class="container">
+                    <div class="txtWrapper txtWrapper_p3 txtWrapper_pTopXTiny mix-txtWrapper_tCenter mix-txtWrapper_fSecondary">
+                        <?php if ($currentStage === 'stage-one'): ?>
+                        <p>
+                            Instant Win Game: NO PURCHASE NECESSARY.  Legal residents of the 50 United States (D.C.) 18 years or older.
+                            Ends 1/15/15 12:00 p.m. PT.  To enter and for
+                            <a href="https://www.liquidplumr.com/wp-content/uploads/2014/10/Liquid_Plumr_Plumr_Pairs_Instant_Win_Game_Official_Rules_Oct14.pdf" target="_blank"><strong>Official Rules</strong></a>,
+                            including odds, and prize descriptions
+                            visit <a href="http://liquidplumr.com/playwithplumrs" target="_blank"><strong>liquidplumr.com/playwithplumrs</strong></a>.  Void where prohibited.
+                        </p>
+                        <?php endif; ?>
+
+                        <?php if ($currentStage !== 'stage-three'): ?>
+                        <p>
+                            Grand Prize Finale Sweepstakes: NO PURCHASE NECESSARY.  Open to legal residents of the 50
+                            United States & D.C. 18 years and older.  Ends 6/15/15.  To enter and for
+                            <a href="https://www.liquidplumr.com/wp-content/uploads/2014/09/Liquid_Plumr_Sweepstakes_Official_Rules_Oct14.pdf" target="_blank"><strong>Official Rules</strong></a>,
+                            including odds and prize description, visit
+                            <a href="http://liquidplumr.com/playwithplumrs" target="_blank"><strong>liquidplumr.com/playwithplumrs</strong></a>. Void where prohibited.
+                            <a href="http://liquidplumr.com/playwithplumrs" target="_blank"><strong>liquidplumr.com/playwithplumrs</strong></a>. Void where prohibited.
+                        </p>
+                        <?php endif; ?>
+                    </div>
+                </div>
+            </div><!-- Footer Secondary - end -->
+
+            <div class="footer-secondary">
+                <div class="containerAtMed">
+                    <div class="grid">
+                        <div class="grid-col grid-col_8of12 grid-col_fRight">
+                            <div class="footer-secondary-top">
+                                <div class="clearfix" role="navigation">
+                                    <ul class="footerNav">
+                                        <li class="footerNav-item">
+                                            <a href="https://www.liquidplumr.com/site-map/" class="footerNav-item-link">Site Map</a>
+                                        </li>
+                                        <li class="footerNav-item">
+                                            <a href="https://www.thecloroxcompany.com/legal/privacy/en-us/" class="footerNav-item-link">Privacy</a>
+                                        </li>
+                                        <li class="footerNav-item">
+                                            <a href="https://www.thecloroxcompany.com/legal/terms/en-us/" class="footerNav-item-link">Terms of Use</a>
+                                        </li>
+                                        <li class="footerNav-item">
+                                            <a href="https://www.liquidplumr.com/contact-us/" class="footerNav-item-link">Contact</a>
+                                        </li>
+                                        <li class="footerNav-item">
+                                            <a href="https://www.thecloroxcompany.com/products/ingredients-inside/en-us/liquidplumr/" class="footerNav-item-link">Ingredients Inside</a>
+                                        </li>
+                                        <li class="footerNav-item">
+                                            <a href="#" class="footerNav-item-link">AdChoices</a>
+                                        </li>
+                                    </ul><!-- Footer Nav - end -->
+                                </div><!-- Footer Secondary Top - end -->
+                            </div>
+                        </div>
+
+                        <div class="grid-col grid-col_4of12">
+                            <div class="footer-secondary-bottom">
+                                <div class="containerAtXsm">
+                                    <div class="hdg hdg_h7 hdg_fTextSecondary hdg_fNormal mix-hdg_cLightAtXsm">&copy; 2014 The Clorox Company. All rights reserved.</div>
+                                </div>
+                            </div><!-- Footer Secondary Bottom - end -->
+                        </div>
+                    </div>
+                </div>
+            </div><!-- Footer Secondary - end -->
+        </div><!-- Footer - end -->
+    </div><!-- Site Footer - end -->
+
+    <div class="modalSneezeGuard modalSneezeGuard_isOpen"></div>
+</div>
+
+
+<!-- JAVASCRIPT -->
+    <script type="text/javascript" src="https://www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- build:js assets/scripts/main.js -->
+        <!-- Note: Polyfill Libraries: -->
+        <script type="text/javascript" src="assets/vendor/polyfill/polyfill.filter.js"></script>
+        <script type="text/javascript" src="assets/vendor/polyfill/polyfill.indexOf.js"></script>
+        <script type="text/javascript" src="assets/vendor/polyfill/polyfill.JSON2.js"></script>
+        <script type="text/javascript" src="assets/vendor/polyfill/polyfill.pointer.js"></script>
+        <script type="text/javascript" src="assets/vendor/modernizr.js"></script>
+
+        <!-- Note: Hammer.js: -->
+        <script type="text/javascript" src="assets/vendor/hammerjs/hammer.js"></script>
+
+        <!-- Note: CreateJS Libraries: -->
+        <script type="text/javascript" src="assets/vendor/preloadjs/preloadjs-NEXT.min.js"></script>
+        <script type="text/javascript" src="assets/vendor/createjs/utils/Proxy.js"></script>
+        <script type="text/javascript" src="assets/vendor/createjs/utils/IndexOf.js"></script>
+        <script type="text/javascript" src="assets/vendor/createjs/events/Event.js"></script>
+        <script type="text/javascript" src="assets/vendor/createjs/events/EventDispatcher.js"></script>
+
+        <!-- Note: CreateJS FlashPlugin to support older browsers: -->
+        <script type="text/javascript" src="assets/vendor/swfobject.js"></script>
+        <script type="text/javascript" src="assets/vendor/soundjs/FlashPlugin.js"></script>
+
+        <script type="text/javascript" src="assets/vendor/soundjs/WebAudioPlugin.js"></script>
+        <script type="text/javascript" src="assets/vendor/soundjs/HTMLAudioPlugin.js"></script>
+        <script type="text/javascript" src="assets/vendor/soundjs/Sound.js"></script>
+
+        <!-- Note: Form Utility Libraries: -->
+        <script type="text/javascript" src="assets/vendor/form2js/form2js.js"></script>
+        <script type="text/javascript" src="assets/vendor/form2js/js2form.js"></script>
+
+        <!-- Note: GreenSock (GSAP) Libraries: -->
+        <script type="text/javascript" src="assets/vendor/gsap/uncompressed/plugins/ScrollToPlugin.js"></script>
+        <script type="text/javascript" src="assets/vendor/gsap/uncompressed/plugins/CSSPlugin.js"></script>
+        <script type="text/javascript" src="assets/vendor/gsap/uncompressed/easing/EasePack.js"></script>
+        <script type="text/javascript" src="assets/vendor/gsap/uncompressed/TweenMax.js"></script>
+        <script type="text/javascript" src="assets/vendor/gsap/uncompressed/utils/Draggable.js"></script>
+
+        <!-- Note: StructureTS dependencies (jQuery also but listed above): -->
+        <script type="text/javascript" src="assets/vendor/handlebars/handlebars.js"></script>
+        <script type="text/javascript" src="assets/vendor/lodash/lodash.js"></script>
+
+        <!-- Note: Project Specific Code: -->
+        <script type="text/javascript" src="assets/scripts/main.js"></script>
+    <!-- endbuild -->
+
+    {{#block "scripts"}}
+
+    {{/block}}
+
+    <!-- Satellite – must come just before closing body tag -->
+    <script type="text/javascript">_satellite.pageBottom();</script>
+    <!-- Satellite End -->
+</body>
+</html>
